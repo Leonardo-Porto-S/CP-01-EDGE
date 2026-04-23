@@ -54,12 +54,11 @@ O sistema utiliza um **Arduino UNO** com um sensor **LDR (Light Dependent Resist
 
 ### Simulação no Tinkercad
 
-1. Acesse [tinkercad.com](https://www.tinkercad.com) e crie uma conta gratuita
-2. Clique em **Circuits → Criar novo circuito**
-3. Monte o circuito conforme o mapeamento de pinos acima
-4. Cole o código disponível em `vinheria_agnello.ino` no editor de código
-5. Clique em **Iniciar simulação**
-6. Ajuste o valor do LDR arrastando o slider para testar os três estados
+1. Acesse o projeto diretamente pelo link: **[🔗 Abrir simulação no Tinkercad](https://www.tinkercad.com/things/fbhfGWKKJD5-incredible-curcan/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard&sharecode=S6d3TGi-MH5Z-t0icW3gvIJMgMvDoE12d_xxHHQUE5w)**
+2. Clique em **Iniciar simulação**
+3. Ajuste o valor do LDR arrastando o slider para testar os três estados
+
+> Caso prefira montar do zero: acesse [tinkercad.com](https://www.tinkercad.com), crie uma conta gratuita, vá em **Circuits → Criar novo circuito**, monte conforme o mapeamento de pinos e cole o código do arquivo `vinheria_agnello.ino`.
 
 ### Arduino Físico
 
@@ -95,16 +94,14 @@ LDR lê luminosidade (0 a 1023)
 Projeto desenvolvido como atividade avaliativa — Vinheria Agnello  
 Disciplina: Sistemas Embarcados / IoT
 
+| Nome | RM |
+|---|---|
+| Leonardo Porto Sodre | 569388 |
+| Leonardo Gomes Gonsalves | 569104 |
+| Eduardo Bechara Medeiros Craveiro | 571081 |
+
 ---
 
 ## 📄 Licença
 
 Este projeto é de uso educacional.
-
-
-# Nomes dos integramtes e rms
-
-# Leonardo Porto Sodre, rm: 569388
-# Leonardo Gomes Golsaves, rm: 569104
-# Eduardo Bechara Medeiros Craveiro, rm: 571081
-
