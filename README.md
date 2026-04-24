@@ -50,6 +50,14 @@ O sistema utiliza um **Arduino UNO** com um sensor **LDR (Light Dependent Resist
 
 ---
 
+## 🎥 Demonstração em Vídeo
+
+Assista à demonstração do projeto funcionando:
+
+[![Demonstração no YouTube](https://img.shields.io/badge/YouTube-Assistir%20Demonstração-red?style=for-the-badge&logo=youtube)](https://youtu.be/wxX3CCuG7Rc)
+
+---
+
 ## 🚀 Como Reproduzir
 
 ### Simulação no Tinkercad
@@ -75,15 +83,13 @@ O sistema utiliza um **Arduino UNO** com um sensor **LDR (Light Dependent Resist
 
 ## ⚙️ Lógica de Funcionamento
 
-```
 LDR lê luminosidade (0 a 1023)
-        │
-        ├── valor >= 500 → 🔴 LED Vermelho + 3 beeps no buzzer
-        │
-        ├── valor >= 300 → 🟡 LED Amarelo
-        │
-        └── valor < 300  → 🟢 LED Verde
-```
+│
+├── valor >= 500 → 🔴 LED Vermelho + 3 beeps no buzzer
+│
+├── valor >= 300 → 🟡 LED Amarelo
+│
+└── valor < 300  → 🟢 LED Verde
 
 > Os valores limites podem ser calibrados no código nas constantes `LUZ_ADEQUADA` e `LUZ_ALERTA` conforme o ambiente real.
 

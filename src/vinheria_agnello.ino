@@ -6,8 +6,8 @@ const int LED_YELLOW = 3;
 const int LED_RED    = 2;
 const int BUZZER_PIN = 4;
 
-const int LUZ_ADEQUADA = 500;
-const int LUZ_ALERTA   = 300;
+const int LUZ_CRITICA = 500;
+const int LUZ_ALERTA  = 300;
 
 void setup() {
   pinMode(LED_GREEN,  OUTPUT);
@@ -21,10 +21,10 @@ void setup() {
 
 void darBeeps() {
   for (int i = 0; i < 3; i++) {
-    tone(BUZZER_PIN, 500); 
-    delay(300);             
+    tone(BUZZER_PIN, 500);
+    delay(300);
     noTone(BUZZER_PIN);
-    delay(300);             
+    delay(300);
   }
 }
 
@@ -43,10 +43,10 @@ void loop() {
   digitalWrite(LED_RED,    LOW);
   noTone(BUZZER_PIN);
 
-  if (ldrValor >= LUZ_ADEQUADA) {
+  if (ldrValor >= LUZ_CRITICA) {
     digitalWrite(LED_RED, HIGH);
     Serial.println("Estado: CRÍTICO - Luminosidade alta demais!");
-    darBeeps();  
+    darBeeps();
 
   } else if (ldrValor >= LUZ_ALERTA) {
     digitalWrite(LED_YELLOW, HIGH);
